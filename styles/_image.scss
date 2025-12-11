@@ -1,0 +1,43 @@
+%img-fluid {
+  width: 100%;
+  display: block;
+}
+
+.arrival-wrapper img{
+  @extend %img-fluid;
+}
+
+.new-arrival-price-card img{
+  @extend %img-fluid;
+}
+
+.featured-price-card img{
+  @extend %img-fluid;
+  margin-bottom:20px;
+}
+
+.series-featured-price-card img{
+  @extend %img-fluid;
+}
+
+.inspiration-photo img{
+  @extend %img-fluid;
+}
+
+.female-shoes-card img{
+  @extend %img-fluid;
+  margin-bottom:20px;
+}
+
+.product-info-img img{
+  @extend %img-fluid;
+}
+
+.recommend-list-wrapper img{
+  @extend %img-fluid;
+}
+
+.recommend-card img {
+  @extend %img-fluid;
+  margin-bottom: 12px;
+}
