@@ -640,6 +640,127 @@ h3 {
   margin: 16px 0;
 }
 
+.collect-page {
+  padding: 40px 0 56px;
+  width: 100%;
+  display: block;
+  align-items: center;
+}
+
+.collect-page .collect-wrap {
+  width: 100%;
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.collect-page .collect-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.collect-page .collect-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline;
+}
+
+.collect-page .collect-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #eaf8df;
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+}
+
+.collect-page .collect-notice__text {
+  margin: 0;
+  font-size: 12px;
+  color: #2b5b1f;
+}
+
+.collect-page .collect-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.collect-page .collect-item {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.collect-page .collect-thumb {
+  width: 84px;
+  height: 56px;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.collect-page .collect-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.collect-page .collect-name {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #222;
+}
+
+.collect-page .collect-meta {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.6;
+}
+.collect-page .collect-meta span {
+  color: #222;
+  margin-left: 6px;
+}
+
+.collect-page .collect-price {
+  font-size: 12px;
+  font-weight: 800;
+  color: #222;
+  white-space: nowrap;
+  justify-self: end;
+}
+
+.collect-page .collect-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.collect-page .collect-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 18px;
+  background: #222;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 12px;
