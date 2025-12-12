@@ -1,4 +1,20 @@
 body {
-  margin: 0;
-  background-color: $bg-test;
+    margin: 0;
+    font-family: $font-base;
+    font-size: $text-md;
+    line-height: 1.5;
+    color: $neutral-900;
+}
+
+h1 { 
+    font-size: $h1;
+    line-height: 1.2;
+ }
+h2 { 
+    font-size: $h2;
+    line-height: 1.2;
+ }
+h3 { 
+    font-size: $h3;  
+    line-height: 1.2; 
 }
