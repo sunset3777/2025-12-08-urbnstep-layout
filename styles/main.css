@@ -24,11 +24,15 @@ h3 {
 
 .container {
   max-width: 1296px;
+  margin: 0 auto;
   padding: 0 24px;
-  margin-left: 312px;
-  margin-right: 312px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}
 .header {
   width: 100%;
   height: 80px;
@@ -80,7 +84,7 @@ h3 {
 
 .hero {
   width: 100%;
-  height: 60vh;
+  height: 120vh;
   max-height: 600px;
   overflow: hidden;
   background-color: #FFFFFF;
@@ -95,7 +99,7 @@ h3 {
 
 .hero-img {
   width: 100%;
-  height: 110%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -130,7 +134,7 @@ h3 {
   border-radius: 10px;
   background: #c0fa73;
   color: #000;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -169,7 +173,7 @@ h3 {
 
 .price {
   margin-top: 4px;
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
 }
 
@@ -266,7 +270,7 @@ h3 {
 }
 
 .co-branded-desc {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 24px;
   color: #ADB5BD;
 }
@@ -277,7 +281,7 @@ h3 {
   border-radius: 99px;
   background: #c0fa73;
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -416,7 +420,7 @@ h3 {
 }
 
 .footer-logo {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #212529;
 }
@@ -441,4 +445,133 @@ h3 {
   font-size: 12px;
   color: #6C757D;
   text-align: center;
+}
+
+.breadcrumb-nav {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-link {
+  color: #666;
+  text-decoration: none;
+}
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 4px;
+  color: #999;
+}
+
+.breadcrumb-current {
+  font-weight: 700;
+  color: #222;
+}
+
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-link {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  padding: 4px 0;
+  font-weight: 700;
+}
+
+.category-link:visited {
+  color: #333;
+}
+
+.category-link:hover {
+  color: #64a30b;
+}
+
+.category-link--active {
+  font-weight: 700;
+  color: #64a30b;
+}
+
+.product-list-wrapper {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.female-shoes-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.female-shoes-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.product-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.category-sidebar {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.product-list-photo {
+  flex: 1;
+}
+
+.pagination-nav {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-page,
+.pagination-prev,
+.pagination-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination-page--active {
+  background: #d9ff75;
+  color: #1a1a1a;
+  border-radius: 4px;
+  font-weight: 400px;
+}
+
+.pagination-ellipsis {
+  color: #999;
 }/*# sourceMappingURL=main.css.map */
