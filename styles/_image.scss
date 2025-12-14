@@ -14,10 +14,12 @@
 .featured-price-card img{
   @extend %img-fluid;
   margin-bottom:20px;
+  object-fit: contain;
 }
 
 .series-featured-price-card img{
   @extend %img-fluid;
+  object-fit: contain;
 }
 
 .inspiration-photo img{
