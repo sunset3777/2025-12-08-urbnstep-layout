@@ -867,6 +867,10 @@ h3 {
   font-weight: 600;
   color: #6C757D;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .login-tab--active {

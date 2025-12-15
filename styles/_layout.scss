@@ -830,6 +830,10 @@
   font-weight: 600;
   color: $neutral-600;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;    
 }
 
 .login-tab--active {
