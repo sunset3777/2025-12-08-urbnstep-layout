@@ -43,3 +43,7 @@
   @extend %img-fluid;
   margin-bottom: 12px;
 }
+
+.brand-intro img {
+  @extend %img-fluid;
+}
