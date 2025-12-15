@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品收藏頁</title>
+    <title>首頁</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-      <header class="header">
+  <header class="header">
   <div class="header-inner">
     <h1 class="header-logo">
         <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week1/logo.svg" alt="">
@@ -28,75 +29,89 @@
     </a>
   </div>
   </header>
-  <section class="collect-page">
-    <div class="collect-wrap">
-        <div class="collect-head">
-            <span class="collect-check" aria-hidden="true"> 
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="11" fill="#E9F7EF"></circle>
-                    <path d="M7 12.5L10.2 15.7L17 8.9" stroke="#1F8A4C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg> </span>
-                <h2 class="collect-title">我的收藏</h2>
-            </div> <div class="collect-notice">
-                <span class="collect-notice__icon" aria-hidden="true"> 
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 4h2l2.2 10.5a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L22 8H7" stroke="#2B5B1F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="10" cy="20" r="1.3" fill="#2B5B1F"/> <circle cx="18" cy="20" r="1.3" fill="#2B5B1F"/>
-                    </svg>
-                </span>
-                <p class="collect-notice__text">門市營業時間：週一至週五 10:00 - 22:00</p>
-            </div>
-             <ul class="collect-list"> 
-                <li class="collect-item"> 
-                    <div class="collect-thumb"> 
-                        <img src="/assets/product.png" alt="PLATFORM 404 Navy"> </div> 
-                        <div class="collect-info"> 
-                            <h3 class="collect-name">PLATFORM 404</h3>
-                            <div class="collect-meta">尺寸
-                                <span>38</span>
-                            </div> <div class="collect-meta">顏色 
-                                <span>Navy</span>
-                            </div>
-                        </div>
-                        <div class="collect-price">NT$2,600</div>
-                    </li>
-                    <li class="collect-item">
-                        <div class="collect-thumb">
-                            <img src="/assets/product-4.png" alt="BOOMLOK White"> </div>
-                            <div class="collect-info">
-                                <h3 class="collect-name">BOOMLOK</h3>
-                                <div class="collect-meta">尺寸 <span>38</span>
-                                </div> <div class="collect-meta">顏色 
-                                    <span>White</span>
-                                </div> 
-                            </div> 
-                            <div class="collect-price">NT$3,200</div> 
-                        </li> <li class="collect-item"> 
-                            <div class="collect-thumb"> 
-                                <img src="/assets/product-3.png" alt="MELTY KISS Violet">
-                             </div> <div class="collect-info">
-                                 <h3 class="collect-name">MELTY KISS</h3> 
-                                 <div class="collect-meta">尺寸 
-                                    <span>38</span>
-                                </div>
-                                    <div class="collect-meta">顏色 
-                                        <span>Violet</span>
-                                    </div> 
-                                </div> 
-                                <div class="collect-price">NT$4,000</div>
-                             </li> 
-                            </ul> 
-                            <div class="collect-actions">
-                                 <a class="collect-btn" href="#">立即前往門市選購</a>
-                                 </div> 
-                                </div> 
-                            </section>
-                            <footer class="footer">
-                                <div class="footer-background">
-                                    <div class="container footer-cta">
-                                        <p class="footer-text">加入會員取得九折優惠</p>
-                                        <a href="#" class="footer-btn">馬上註冊</a>
-                                    </div>
+  <main>
+<section class="collect-page">
+  <div class="collect-wrap">
+    <div class="collect-head">
+      <div class="collect-check" aria-hidden="true">
+        <!-- 勾勾 icon -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="11" fill="#E9F7EF"></circle>
+          <path d="M7 12.5L10.2 15.7L17 8.9" stroke="#1F8A4C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <h2 class="collect-title">我的收藏</h2>
+    </div>
+
+    <div class="collect-notice">
+      <span class="collect-notice__icon" aria-hidden="true">
+        <!-- 購物車 icon -->
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M3 4h2l2.2 10.5a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L22 8H7"
+            stroke="#2B5B1F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="20" r="1.3" fill="#2B5B1F"/>
+          <circle cx="18" cy="20" r="1.3" fill="#2B5B1F"/>
+        </svg>
+      </span>
+      <p class="collect-notice__text">門市營業時間：週一至週五 10:00 - 22:00</p>
+    </div>
+
+    <ul class="collect-list">
+      <li class="collect-item">
+        <div class="collect-thumb">
+          <img src="/assets/product.png" alt="PLATFORM 404 Navy">
+        </div>
+
+        <div class="collect-info">
+          <h3 class="collect-name">PLATFORM 404</h3>
+          <div class="collect-meta">尺寸 <span>38</span></div>
+          <div class="collect-meta">顏色 <span>Navy</span></div>
+        </div>
+
+        <div class="collect-price">NT$2,600</div>
+      </li>
+
+      <li class="collect-item">
+        <div class="collect-thumb">
+          <img src="/assets/product-4.png" alt="BOOMLOK White">
+        </div>
+
+        <div class="collect-info">
+          <h3 class="collect-name">BOOMLOK</h3>
+          <div class="collect-meta">尺寸 <span>38</span></div>
+          <div class="collect-meta">顏色 <span>White</span></div>
+        </div>
+
+        <div class="collect-price">NT$3,200</div>
+      </li>
+
+      <li class="collect-item">
+        <div class="collect-thumb">
+          <img src="/assets/product-3.png" alt="MELTY KISS Violet">
+        </div>
+
+        <div class="collect-info">
+          <h3 class="collect-name">MELTY KISS</h3>
+          <div class="collect-meta">尺寸 <span>38</span></div>
+          <div class="collect-meta">顏色 <span>Violet</span></div>
+        </div>
+
+        <div class="collect-price">NT$4,000</div>
+      </li>
+    </ul>
+
+    <div class="collect-actions">
+      <a class="collect-btn" href="#">立即前往門市選購</a>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="footer-background">
+    <div class="container footer-cta">
+      <p class="footer-text">加入會員取得九折優惠</p>
+      <a href="#" class="footer-btn">馬上註冊</a>
+    </div>
   </div>
   <div class="footer-main">
     <div class="container footer-inner">
