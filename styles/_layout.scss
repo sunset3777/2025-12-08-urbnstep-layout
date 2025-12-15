@@ -842,7 +842,6 @@
 }
 
 .login-tab--active::after {
-  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -875,3 +874,169 @@
   display: block;
 }
 
+.brand-banner {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  margin-bottom:$space-6;
+}
+
+.brandstory-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-banner-content{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.story-banner-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.story-banner-subtitle {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.story-highlight {
+  max-width: 856px;
+  margin: 0 auto 32px;
+  padding: 24px 32px;
+  background: #f6ffe6;
+  border: 2px solid $primary-100;
+  text-align: center;
+}
+
+.story-highlight-title {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f6b1d;
+  max-width: 856px;
+}
+
+.story-highlight-text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.brand-intro{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  max-width: 1076px;
+  margin:0 auto;
+  border-bottom: 1px solid $neutral-200;
+}
+
+.brand-text{
+  display:flex;
+  flex-direction: column;
+  max-width: 856px;
+  margin:0 auto;
+}
+
+.intro-img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.intro-title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $neutral-900;
+}
+
+.intro-subtitle {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  font-weight: 700;
+  color: $primary-500;
+  line-height: 1.6;
+}
+
+.intro-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: $neutral-800;
+}
+
+.section-title {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.brand-history,
+.brand-concept,
+.brand-narrative {
+  border-bottom: 1px solid $neutral-200;
+  padding: 24px 0;
+  margin: 0 auto 24px;
+  max-width: 856px;
+}
+
+.history-list,
+.concept-list,
+.narrative-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.concept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.concept-list li {
+  padding-left: 12px;
+  margin-bottom: 8px;
+  border-left: 1px solid $neutral-200;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $neutral-800;
+}
+
+.narrative-link {
+  color: $primary-500;
+  text-decoration: none;
+}
+
+.narrative-link:hover {
+  text-decoration: underline;
+}
+
+.narrative-list a {
+  position: relative;
+  padding-left: 16px;
+}
+
+.narrative-list a::before {
+  content: "↗";
+  position: absolute;
+  left: 0;
+  color: $primary-500;
+}
