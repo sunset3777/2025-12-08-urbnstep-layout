@@ -2,6 +2,17 @@
   .container {
     padding: 0 12px;
   }
+  .body{
+    overflow-x: hidden;
+  }
+  .header,
+  .main,
+  .footer,
+  .footer-background,
+  .footer-main {
+    width: 100%;
+    max-width: 100%;
+  }
 
   .hero {
     height: 520px;
@@ -317,4 +328,99 @@
     flex-shrink: 0;
   }
 
+}
+
+@media (max-width: 768px) {
+  .collect-page {
+    padding: 24px 12px 40px;
+  }
+
+  .collect-page .collect-notice{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .collect-page .collect-notice__icon {
+    flex: 0 0 auto;
+  }
+
+  .collect-page .collect-notice-text{
+    min-width: 0;
+    overflow-wrap: anywhere;
+    flex: 1 1 auto;
+  }
+
+  .collect-page .collect-wrap {
+    padding:0;
+  }
+
+  .collect-page .collect-list .collect-item {
+    display: grid !important;
+    grid-template-columns: 96px minmax(0, 1fr) !important;
+    column-gap: 12px;
+    row-gap: 4px;
+    align-items: start;
+  }
+
+  .collect-page .collect-list .collect-thumb {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .collect-page .collect-list .collect-info {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    min-width: 0;
+  }
+
+  .collect-page .collect-list .collect-price {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .collect-page .collect-list .collect-thumb img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    display: block;
+  }
+
+    .collect-page .collect-info {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    min-width: 0;
+  }
+
+  .collect-page .collect-price {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .collect-page .collect-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .collect-page .collect-price {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .header-user,
+  .header-user img,
+  .header-user svg {
+    display: inline-flex;
+    visibility: visible;
+    opacity: 1;
+  }
 }
