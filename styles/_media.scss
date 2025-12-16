@@ -424,3 +424,55 @@
     opacity: 1;
   }
 }
+
+@media (max-width:768px){
+  .login-page {
+    padding: 16px 0;
+  }
+
+  .login-layout {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+
+  .photo-left {
+    background-image: url("/assets/login-sm.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: none;
+    width: 100%;
+    border-radius:0;
+    height: 60vh;
+    max-height: 420px;
+    min-height: 240px;
+  }
+
+  .photo-left img{
+    display:none;
+  }
+
+  .layout-right {
+    min-height: auto;
+    padding: 16px 12px 24px;
+    background-image: none;
+    background-color: #fff;
+  }
+
+  .login-card {
+    max-width: 100%;
+    min-height: auto;
+    border-radius: 0;
+    padding: 24px 16px;
+    background: transparent; 
+  }
+
+  .login-tabs {
+    margin-bottom: 16px;
+  }
+
+  .social-btn {
+    padding: 12px;
+  }
+}

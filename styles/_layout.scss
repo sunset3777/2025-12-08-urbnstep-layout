@@ -367,7 +367,7 @@
   color: #64a30b;
 }
 
-.category-link--active {
+.category-link-active {
   font-weight: 700;
   color: #64a30b;
 }
@@ -428,7 +428,7 @@
   color: #333;
 }
 
-.pagination-page--active {
+.pagination-page-active {
   background: #d9ff75;
   color: #1a1a1a;
   border-radius: 4px;
@@ -526,7 +526,7 @@
   object-fit: cover;
 }
 
-.color-item--active {
+.color-item-active {
   border-color: $primary-400;
 }
 
@@ -541,7 +541,7 @@
   font-size: $h7;
 }
 
-.color-name--active {
+.color-name-active {
   font-weight: 700;
 }
 
@@ -567,12 +567,12 @@
   cursor: pointer;
 }
 
-.size-item--active {
+.size-item-active {
   border-color: $neutral-900;
   font-weight: 700;
 }
 
-.size-item--disabled {
+.size-item-disabled {
   color: $neutral-400;
   border-style: dashed;
   cursor: not-allowed;
@@ -844,12 +844,13 @@
   text-decoration: none;    
 }
 
-.login-tab--active {
+.login-tab-active {
   color: $neutral-900;
   position: relative;
 }
 
-.login-tab--active::after {
+.login-tab-active::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
