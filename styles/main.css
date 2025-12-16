@@ -464,7 +464,7 @@ h3 {
   background: #d9ff75;
   color: #1a1a1a;
   border-radius: 4px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .pagination-ellipsis {
@@ -618,19 +618,27 @@ h3 {
   color: #e60012;
 }
 
-.product-action-block {
+.action-desktop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   margin-top: 16px;
 }
 
+.action-mobile {
+  display: none;
+}
+
 .btn-outline,
 .btn-primary {
-  padding: 10px 16px;
+  padding: 0;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-outline {
@@ -1217,6 +1225,133 @@ h3 {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .product-page .product-layout {
+    display: block;
+  }
+  .product-page .category-sidebar {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .product-page .category-list {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+  }
+  .product-page .category-item {
+    flex: 0 0 auto;
+  }
+  .product-page .category-link {
+    display: inline-block;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .product-page .category-link--active {
+    background: #64a30b;
+    color: #fff;
+    border-color: #64a30b;
+  }
+  .product-page .category-list::-webkit-scrollbar {
+    display: none;
+  }
+  .product-page .category-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .product-page .product-list-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .product-page .breadcrumb-nav {
+    font-size: 12px;
+    margin: 12px 0;
+  }
+  .product-page .pagination-nav {
+    margin: 24px auto;
+  }
+}
+@media (max-width: 768px) {
+  .product-detail-page .product-info {
+    display: block;
+  }
+  .product-detail-page .product-info-left,
+  .product-detail-page .product-info-right {
+    width: 100%;
+  }
+  .product-detail-page .left-info-wrapper {
+    display: block;
+  }
+  .product-detail-page .product-info-img {
+    display: none;
+  }
+  .product-detail-page .action-desktop {
+    display: none !important;
+  }
+  .product-detail-page .action-mobile {
+    display: grid;
+    grid-template-columns: 1fr 56px;
+    gap: 12px;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .product-detail-page .btn-primary--with-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 56px;
+    border-radius: 8px;
+  }
+  .product-detail-page .btn-icon {
+    width: 24px;
+    height: 24px;
+    background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/refs/heads/main/2025-week3-4/bag.svg") no-repeat center/contain;
+  }
+  .product-detail-page .btn-fav {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+  }
+  .product-detail-page .btn-fav::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url("/assets/heart-svgrepo-com.svg") no-repeat center/contain;
+  }
+  .product-detail-page .product-info-img:first-child {
+    display: block;
+  }
+  .product-detail-page .size-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-detail-page .product-info-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .recommend-list-wrapper {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+  }
+  .recommend-card {
+    flex: 0 0 75%;
+    flex-shrink: 0;
   }
 }
 .header {

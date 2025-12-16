@@ -432,7 +432,7 @@
   background: #d9ff75;
   color: #1a1a1a;
   border-radius: 4px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .pagination-ellipsis {
@@ -584,19 +584,26 @@
   color: #e60012;
 }
 
-.product-action-block {
+.action-desktop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: $space-3;
   margin-top: $space-4;
 }
 
+.action-mobile {
+   display: none; }
+
 .btn-outline,
 .btn-primary {
-  padding: 10px 16px;
+  padding: 0;
   font-size: $h6;
   border-radius: 4px;
   cursor: pointer;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-outline {
@@ -609,6 +616,7 @@
   background: #000;
   color: #fff;
 }
+
 .info-detail{
   margin-top: $space-7;
 }
