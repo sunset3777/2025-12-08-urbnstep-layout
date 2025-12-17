@@ -399,7 +399,7 @@ h3 {
   color: #64a30b;
 }
 
-.category-link--active {
+.category-link-active {
   font-weight: 700;
   color: #64a30b;
 }
@@ -460,7 +460,7 @@ h3 {
   color: #333;
 }
 
-.pagination-page--active {
+.pagination-page-active {
   background: #d9ff75;
   color: #1a1a1a;
   border-radius: 4px;
@@ -562,7 +562,7 @@ h3 {
      object-fit: cover;
 }
 
-.color-item--active {
+.color-item-active {
   border-color: #57A203;
 }
 
@@ -577,7 +577,7 @@ h3 {
   font-size: 12px;
 }
 
-.color-name--active {
+.color-name-active {
   font-weight: 700;
 }
 
@@ -601,12 +601,12 @@ h3 {
   cursor: pointer;
 }
 
-.size-item--active {
+.size-item-active {
   border-color: #212529;
   font-weight: 700;
 }
 
-.size-item--disabled {
+.size-item-disabled {
   color: #CED4DA;
   border-style: dashed;
   cursor: not-allowed;
@@ -717,7 +717,7 @@ h3 {
   margin-bottom: 14px;
 }
 
-.collect-page .collect-notice__text {
+.collect-page .collect-notice-text {
   margin: 0;
   font-size: 12px;
   color: #2b5b1f;
@@ -881,12 +881,13 @@ h3 {
   text-decoration: none;
 }
 
-.login-tab--active {
+.login-tab-active {
   color: #212529;
   position: relative;
 }
 
-.login-tab--active::after {
+.login-tab-active::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -1090,6 +1091,17 @@ h3 {
 @media (max-width: 768px) {
   .container {
     padding: 0 12px;
+  }
+  .body {
+    overflow-x: hidden;
+  }
+  .header,
+  .main,
+  .footer,
+  .footer-background,
+  .footer-main {
+    width: 100%;
+    max-width: 100%;
   }
   .hero {
     height: 520px;
@@ -1352,6 +1364,149 @@ h3 {
   .recommend-card {
     flex: 0 0 75%;
     flex-shrink: 0;
+  }
+}
+@media (max-width: 768px) {
+  .collect-page {
+    padding: 24px 12px 40px;
+  }
+  .collect-page .collect-notice {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .collect-page .collect-notice__icon {
+    flex: 0 0 auto;
+  }
+  .collect-page .collect-notice-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    flex: 1 1 auto;
+  }
+  .collect-page .collect-wrap {
+    padding: 0;
+  }
+  .collect-page .collect-list .collect-item {
+    display: grid !important;
+    grid-template-columns: 96px minmax(0, 1fr) !important;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    row-gap: 4px;
+    align-items: start;
+  }
+  .collect-page .collect-list .collect-thumb {
+    grid-column: 1;
+    grid-row: 1/span 3;
+  }
+  .collect-page .collect-list .collect-info {
+    grid-column: 2;
+    grid-row: 1/span 2;
+    min-width: 0;
+  }
+  .collect-page .collect-list .collect-price {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    margin-left: 0;
+    text-align: left;
+  }
+  .collect-page .collect-list .collect-thumb img {
+    width: 96px;
+    height: 96px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .collect-page .collect-info {
+    grid-column: 2;
+    grid-row: 1/span 2;
+    min-width: 0;
+  }
+  .collect-page .collect-price {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    margin-left: 0;
+    text-align: left;
+  }
+  .collect-page .collect-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .collect-page .collect-price {
+    margin-left: 0;
+    text-align: left;
+  }
+  .header-user,
+  .header-user img,
+  .header-user svg {
+    display: inline-flex;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .login-page {
+    padding: 16px 0;
+  }
+  .login-layout {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+  .photo-left {
+    background-image: url("/assets/login-sm.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: none;
+    width: 100%;
+    border-radius: 0;
+    height: 60vh;
+    max-height: 420px;
+    min-height: 240px;
+  }
+  .photo-left img {
+    display: none;
+  }
+  .layout-right {
+    min-height: auto;
+    padding: 16px 12px 24px;
+    background-image: none;
+    background-color: #fff;
+  }
+  .login-card {
+    max-width: 100%;
+    min-height: auto;
+    border-radius: 0;
+    padding: 24px 16px;
+    background: transparent;
+  }
+  .login-tabs {
+    margin-bottom: 16px;
+  }
+  .social-btn {
+    padding: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .story-highlight {
+    margin: 0 12px;
+    padding: 20px 16px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background: #f2f9dc;
+  }
+  .brand-card {
+    margin: 0 12px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .brand-title {
+    font-size: 22px;
   }
 }
 .header {
